@@ -36,7 +36,7 @@ export class HomepageComponent implements OnInit {
 
   // }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getUsers("nicholas-oduor");
   }
 }

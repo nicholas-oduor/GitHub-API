@@ -18,7 +18,7 @@ export class GitSearchService {
     this.repo = new Repo("","","","",0);
   }
 
-  getUsers(userName:string){
+  getUsers(userName:any){
     interface ApiResponse{
       public_repos:string,
       login:string,
@@ -47,12 +47,12 @@ export class GitSearchService {
     return promise;
   }
   //Get Repo
-  getRepo(userName:string){
+  getRepo(userName: any){
     interface ApiResponse{
       html_url:string,
       name:string,
       repos_url:string,
-      description:string,
+      description:string, 
       forks_count:number,
     }
 
